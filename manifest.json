@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Deeproute.com Scrimmage Autofill",
-    "version": "2021.07.20",
+    "version": "2021.07.21",
     "description": "A chrome extension that autofills your scrimmage settings based upon your last submission.",
     "content_scripts": [
         {
@@ -9,7 +9,7 @@
                 "http://deeproute.com/*?js=scrimsign*"
             ],
             "js": [
-                "jquery-3.4.1.min.js",
+                "jquery-3.6.0.min.js",
                 "main.js"
             ]
         }
