@@ -6,3 +6,6 @@ A chrome extension that autofills your scrimmage settings based upon your last s
 2. Unpack the file
 3. Follow the instructions to load an unpacked extension using developer mode: https://developer.chrome.com/extensions/getstarted#manifest
 
+# Known Bugs
+- Will break if trying to use for an "Open Scrimmage"
+
