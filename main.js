@@ -6,13 +6,10 @@ $(document).ready(function () {
         $('select[name="openclose"').val(getCookie('DR_scrim_openclose'));
         $('select[name="scrimstart"]').val(getCookie('DR_scrim_scrimstart'));
         $('select[name="leagueboxes"]').val(getCookie('DR_scrim_leagueboxes'));
-        post("http://deeproute.com/scrim2.asp").then(
-            function (e) {
-                document.getElementById("result").innerHTML = e.target.responseText;
-                let val = getCookie('DR_scrim_teamz');
-                console.log(val);
-                $('select[name="teamz"]').val(val);
-            }, function (e) {
+        post("http://deeproute.com/?js=scrimsign").then(
+            function (response) {
+                console.log(response);
+            }, function (error) {
                 // handle errors
             });
     } catch {
